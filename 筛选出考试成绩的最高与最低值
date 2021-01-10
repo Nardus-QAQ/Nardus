@@ -1,0 +1,18 @@
+/*筛选出考试成绩的最高于最低值*/
+#include<stdio.h>
+int main()
+{
+	int a[10]={82,67,89,22,31,89,87,67,99,88};
+	int i,min=100,max=0;
+	for(i=0;i<10;i++)
+	if(a[i]<min)
+	{
+		min=a[i];
+	}
+	else if(a[i]>max)
+	{
+		max=a[i]; 
+	}
+	
+	printf("the highest score is %d.\n the lowest score is %d",max,min);
+ } 
