@@ -1,0 +1,21 @@
+/*寻找绝对值最大的数*/
+#include<math.h>
+#include<stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+
+	int a[20];
+	for (int i=0;i<n;i++)
+	scanf("%d",&a[i]);
+	int max=abs(a[0]);
+	for (int j=1;j<n;j++)
+	{
+		if (abs(max)<=abs(a[j]))
+		{
+			max=a[j];
+		}
+	}
+	printf("%d",max);
+ } 
