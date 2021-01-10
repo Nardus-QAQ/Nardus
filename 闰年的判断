@@ -1,0 +1,21 @@
+/*判断一个年份是否为闰年*/
+#include<stdio.h>
+int main()
+{
+	int a,b,c;
+	printf("输入年份:");
+	scanf("%d",&a);
+	b=a%4;
+	c=a%400;
+	switch (b)
+	{
+		case 0:{
+		if(c!=0)
+		printf("%d年是闰年",a);
+		else
+		 printf("%d年不是闰年",a);}
+		break;
+		default :printf("%d年不是闰年",a);
+		break;
+	}
+ } 
