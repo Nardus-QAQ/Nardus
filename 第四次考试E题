@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+char *consver(char *str) ;
+int main()
+{
+char *token;
+char seps[] = " ";
+char abc[4096];
+char string[] = {"I am happy today \n To be or not to be \n I want to win the practice contest \n"};
+token = strtok( string, seps );
+while( token != NULL )
+{
+printf( " %s ", consver(token) );
+// Get next token:
+token = strtok( NULL, seps );
+}
+}
+char *consver(char *str)
+{
+if(*str !='\0')
+{
+char temp;
+char *s1 = str;
+char *s2 = str+strlen(str)-1;
+for(;s1 < s2;s1++,s2--)
+{
+temp = *s1;
+*s1 = *s2;
+*s2 = temp;
+}
+}
+return str;
+}
