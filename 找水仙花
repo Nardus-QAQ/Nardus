@@ -1,0 +1,35 @@
+/*第四次考试B题*/
+#include<stdio.h>
+int main()
+{
+	int T,i,j;
+	int a,b,c,d,e;
+	scanf("%d",&T);//规定T组输入数据 
+	int m[T][2];
+	for(i=0;i<T;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+		
+			scanf("%d",&m[i][j]);//为二维数组赋值 
+		}
+		b=m[i][1];
+		for(a=m[i][0];a<=b;a++)
+		{
+		c=a/100;
+		d=(a-c*100)/10;
+		e=a%10;
+		if(a==c*c*c+d*d*d+e*e*e)//通过循环语句找出二维数组每一行数据数字范围内的水仙花数 
+		{
+			printf("%d ",a);
+		}
+		else 
+		{
+			printf("-1");
+		}
+	}
+	
+	
+}
+	}
+	
