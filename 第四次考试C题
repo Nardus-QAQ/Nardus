@@ -1,0 +1,73 @@
+/*第四次考试C题*/
+#include<stdio.h>
+int main()
+{
+int N;
+scanf("%d",&N);
+for (int i=0;i<N;i++)
+{
+  int n;
+  scanf("%d",&n);
+  int a[n];
+  int J,O;
+  for (int j=0;j<n;j++)
+  {
+  	scanf("%d",&a[i]);
+  	if (a[i]%2==0)
+  	{O++;
+	  }
+	if (a[i%2!=0])
+	{J++;
+	}
+  }
+  int b[J];
+  int c[O];
+  int r=0,t=0;
+  int zhong1,zhong2;
+   for (int j=0;j<n;j++)
+  {
+  	if (a[i]%2==0)
+  	{
+  		c[r]=a[i];
+  		r++;
+	  }
+	if (a[i%2!=0])
+	{
+		b[t]=a[i];
+		t++;
+	}
+  }
+  for(int i=1;i<J;i++)
+  {
+  	for (int j=0;j<J-1;j++)
+  	{
+  		if(b[j]>b[j+1])
+  		{zhong1=b[j];
+  		b[j]=b[+1];
+  		b[j+1]=zhong1;
+		  }
+	  }
+  }
+  for(int i=1;i<O;i++)
+  {
+  	for (int j=0;j<O-1;j++)
+  	{
+  		if(c[j]>=c[j+1])
+  		{zhong2=c[j];
+  		c[j]=c[+1];
+  		c[j+1]=zhong2;
+		  }
+	  }
+  }
+  for (int j=0;j<J;j++)
+  {
+  	printf("%d",b[j]);
+  }
+  for (int j=0;j<O;j++)
+  {
+  	printf("%d",c[j]);
+  }
+  
+  printf("\n");
+
+} 
