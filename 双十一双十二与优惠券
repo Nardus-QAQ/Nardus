@@ -1,0 +1,33 @@
+#include <stdio.h>
+int main()
+{
+   float a;
+   int b,c,d;
+   scanf("%f%d%d%d",&a,&b,&c,&d);
+   if(b==11&&c==11&&d==1)
+   {
+   	if(0.7*a>=50)
+   	printf("%.2f",0.7*a-50);
+   	else 
+   	 printf("0.00");
+	} 
+	else if (b==11&&c==11&&d==0)
+	{
+	
+		printf("%.2f",0.7*a);
+
+	}
+	else if (b==12&&c==12&&d==1)
+	{
+		if(0.8*a>=50)
+		printf("%.2f",0.8*a-50);
+		else 
+		printf("0.00");
+	}
+	else if(b==12&&c==12&&d==0)
+	{
+		printf("%.2f",0.8*a);
+	}
+	else
+	printf("%.2f",a);
+}
