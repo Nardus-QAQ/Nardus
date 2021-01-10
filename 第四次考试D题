@@ -1,0 +1,8 @@
+/*第四次考试D题*/
+#include<stdio.h>
+int main()
+{   int c,b;
+	c=getchar();
+	b=sizeof(c);
+	printf("%d",b);
+ } 
