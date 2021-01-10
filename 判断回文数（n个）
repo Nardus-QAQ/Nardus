@@ -1,0 +1,30 @@
+/*判断回文数（n个）*/
+#include<stdio.h>
+int main()
+{
+	int n,i,num,a,b=0,k;
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		scanf("%d",&num);
+		k=num;
+		while(k>0)
+		{
+			b=b*10+k%10;
+			k=k/10;
+			
+			
+			
+		}
+		if(num==b)
+		printf("yes\n");
+		else 
+		printf("no\n");
+		b=0;
+		}
+		
+		
+		
+	return 0;	
+	}
+  
