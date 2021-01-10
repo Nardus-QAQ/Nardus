@@ -1,0 +1,28 @@
+/*二进制转十进制*/
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int i=0,num,bi,k,m,n,A,j=1;
+	scanf("%d\n",&A);
+	for(j=1;j<=A;j++)
+	{
+	
+	
+	scanf("%d",&num);
+	
+	k=num;
+    while(k>0)
+	{   bi=pow(2,i);
+		m=k%10;
+		n=n+m*bi;
+		k=k/10;
+		i++;
+		
+		
+		
+		
+		
+	}
+	printf("%d",n);}
+ } 
