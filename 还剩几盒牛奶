@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+	int a,b,c;
+	scanf("%d%d%d",&a,&b,&c);
+	int d,e,f;
+	d=c/b;
+	if(c%b!=0)
+	d=d+1;
+	f=a-d;
+	printf("%d",f); } 
