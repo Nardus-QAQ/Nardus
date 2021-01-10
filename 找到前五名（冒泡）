@@ -1,0 +1,24 @@
+/*找出前五名*/
+#include<stdio.h>
+int main()
+{
+	int a;
+	int t;
+	int i;
+	scanf("%d",&a);
+	int b[a];
+	for(i=0;i<a;i++)
+	scanf("%d",&b[i]);
+	for (int j=0;j<a;j++)
+	 {
+	 	for (int k=0;k<a-1-j;k++)
+	 	if(b[k]<b[k+1])
+	 	{  t=b[k];
+	 	    b[k]=b[k+1];
+	 	    b[k+1]=t;
+	 		
+		 }
+	 }
+	 for(int m=0;m<5;m++)
+	 printf("%d ",b[m]);
+ } 
