@@ -1,0 +1,21 @@
+/*A和B谁多*/
+#include<stdio.h>
+int main()
+{
+	char a;
+	int i=0,j=0;
+	while((a=getchar())!='0'&&a!=EOF)//EOF用法
+	{
+		if(a=='A')
+		i++;
+		else if(a=='B')
+		j++;
+	}
+	if (i>j)
+	printf("A");
+	else if(i<j) 
+	printf("B");
+	else 
+	printf("E");
+	return 0; 
+ } 
